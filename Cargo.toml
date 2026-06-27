@@ -1,0 +1,13 @@
+[package]
+name = "msql_cdc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = { version = "0.4.38" }
+regex = { version = "1.10.6" }
+serde = { version = "1.0.210", features = ["derive"] }
+tiberius = { version = "0.12.3" }
+tokio = { version = "1.39.3", features = ["net", "rt", "rt-multi-thread", "macros"] }
+tokio-macros = { version = "2.4.0" }
+tokio-util = { version = "0.7.11", features = ["compat"] }
